@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
     kotlin("jvm") version "1.6.10"
@@ -9,13 +8,18 @@ plugins {
 group = "me.rest2"
 version = "1.0-SNAPSHOT"
 
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation ("com.google.code.gson:gson:2.8.5")
+
+    implementation ("com.google.code.gson:gson:2.8.9")
+
+
+
 
 }
 
